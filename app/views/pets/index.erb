@@ -1,1 +1,9 @@
-index.erb
+<h1>Index: Pets</h1>
+
+<label>Existing Pets:</label>
+<br>
+<% Pet.all.each do |pet| %>
+</br>
+  <%=pet.name%>
+<%end%>
+<br>

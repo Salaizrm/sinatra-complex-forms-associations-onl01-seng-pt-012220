@@ -1,1 +1,9 @@
-index.erb
+<h1>Index: Owners</h1>
+
+<label>Choose an existing owner:</label>
+<br>
+<% Owner.all.each do |owner| %>
+</br>
+  <%=owner.name%><p>Owner ID:<%= owner.id%></p>
+<%end%>
+<br>
